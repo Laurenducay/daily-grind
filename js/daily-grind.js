@@ -31,18 +31,42 @@ desc - A description of the coffee
     case 0:
         today = "Sunday";
 
+        coffee = {
+            name: "Cold-Brew",
+            pic: "images/cold-brew.jpg",
+            day: "Sunday",
+            alt: "A pic of a Cold-Brew",
+            color: "brown",
+            desc: `I love me a Cold-Brew!`
+        };
         
     break;
 
     case 1:
         today = "Monday";
 
-
-        
+        coffee = {
+            name: "Pumpkin-Spice-Latte",
+            pic: "images/pumpkin-spice-latte.jpg",
+            day: "Monday",
+            alt: "A pic of a Pumpkin-Spice-Latte",
+            color: "orange",
+            desc: `Pumpkin-Spice-Latte's are perfect during these times!`
+        };
     break;
 
     case 2:
         today = "Tuesday";
+
+        coffee = {
+            name: "Caramel-Latte",
+            pic: "images/caramel-latte.jpg",
+            day: "Tuesday",
+            alt: "A pic of a Caramel-Latte",
+            color: "purple",
+            desc: `Caramel-Latte's are the best ever!`
+        };
+
     break;
 
     case 3:
@@ -62,15 +86,42 @@ desc - A description of the coffee
     case 4:
         today = "Thursday";
 
+        coffee = {
+            name: "Frappaccino",
+            pic: "images/frappaccino.jpg",
+            day: "Thursday",
+            alt: "A pic of a Frappaccino",
+            color: "yellow",
+            desc: `Frappaccino's are so delicious!`
+        };
+
     break;
 
     case 5:
         today = "Friday";
 
+        coffee = {
+            name: "Mocha",
+            pic: "images/mocha.jpg",
+            day: "Friday",
+            alt: "A pic of a Mocha",
+            color: "green",
+            desc: `Mocha is the best drink ever!`
+        };
+
     break;
 
     case 6:
         today = "Saturday";
+
+        coffee = {
+            name: "Drip",
+            pic: "images/drip.jpg",
+            day: "Saturday",
+            alt: "A pic of a Drip",
+            color: "blue",
+            desc: `A classic drink calls for a Drip!`
+        };
 
     break;
 
