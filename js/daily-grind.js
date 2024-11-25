@@ -4,6 +4,22 @@ let myDay = myDate.getDay();
 let today = "";
 let coffee = "";
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+
+if(urlParams.has("day")){//from querystring
+    myDay = urlParams.get("day");
+}
+
+myDay = parseInt(myDay);
+
 
 switch(myDay){
 //theDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -50,7 +66,7 @@ desc - A description of the coffee
             pic: "images/pumpkin-spice-latte.jpg",
             day: "Monday",
             alt: "A pic of a Pumpkin-Spice-Latte",
-            color: "orange",
+            color: "pink",
             desc: `Pumpkin-Spice-Latte's are perfect during these times!`
         };
     break;
@@ -77,7 +93,7 @@ desc - A description of the coffee
             pic: "images/bubble-tea.jpg",
             day: "Wednesday",
             alt: "A pic of a Bubble Tea",
-            color: "pink",
+            color: "orange",
             desc: `I like me some Bubble Tea!`
         };
 
@@ -129,10 +145,10 @@ desc - A description of the coffee
         today = "Something went wrong";
 
 }
-alert(today);
+//alert(today);
 console.log(coffee);
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
-
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 function coffeeTemplate(coffee){
     let myReturn = `<img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
